@@ -6,8 +6,7 @@ import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-
-public class MainActivityErro extends AppCompatActivity {
+public class ActivityCorreto extends AppCompatActivity {
 
     Button btnVoltar;
 
@@ -15,9 +14,9 @@ public class MainActivityErro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main_erro);
+        setContentView(R.layout.activity_correto);
 
-        btnVoltar = findViewById(R.id.btnFecharT3);
+        btnVoltar = findViewById(R.id.btnFecharT2);
 
         btnVoltar.setOnClickListener(v -> {
             finish();

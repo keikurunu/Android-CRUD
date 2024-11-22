@@ -14,11 +14,11 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".MainActivityErro"
+            android:name=".ActivityErro"
             android:exported="false" />
 
         <activity
-            android:name=".MainActivityOk"
+            android:name=".ActivityCorreto"
             android:exported="false" />
 
         <activity

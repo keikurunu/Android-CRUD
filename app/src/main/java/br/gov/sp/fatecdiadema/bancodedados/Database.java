@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+public class Database extends SQLiteOpenHelper {
 
     // Constantes do DB:
     public static final String DATABASE_NAME = "dados.db";
@@ -16,7 +16,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_3 = "SENHA";
 
     // Construtor da classe que chama o construtor da superclasse passando o contexto.
-    public DatabaseHelper(Context context){
+    public Database(Context context){
         super(context, DATABASE_NAME, null, 1);
     }
 

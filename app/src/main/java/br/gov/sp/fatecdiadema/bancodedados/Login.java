@@ -16,7 +16,7 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class Login extends AppCompatActivity {
 
-    DatabaseHelper dbHelper;
+    Database dbHelper;
     TextInputEditText textUsuario, textSenha;
     Button btnEntrar, btnGerenciar;
 
@@ -31,7 +31,7 @@ public class Login extends AppCompatActivity {
             return insets;
         });
 
-        dbHelper = new DatabaseHelper(this);
+        dbHelper = new Database(this);
 
         textUsuario = findViewById(R.id.textInEdUserT1);
         textSenha = findViewById(R.id.textInEdSenhaT1);
@@ -59,10 +59,10 @@ public class Login extends AppCompatActivity {
 
             if(cursor !=null && cursor.moveToFirst()){
 
-            String senhaArmazenada = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.COL_3));
+            String senhaArmazenada = cursor.getString(cursor.getColumnIndexOrThrow(Database.COL_3));
 
             if(senhaArmazenada.equals(senha)){
-                Intent intent = new Intent(this, MainActivityOk.class);
+                Intent intent = new Intent(this, ActivityCorreto.class);
                 startActivity(intent);
             }else {
                 Toast.makeText(Login.this,
@@ -70,7 +70,7 @@ public class Login extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
             }cursor.close();
             }else{
-                Intent intent = new Intent(this, MainActivityErro.class);
+                Intent intent = new Intent(this, ActivityErro.class);
                 startActivity(intent);
             }
         });

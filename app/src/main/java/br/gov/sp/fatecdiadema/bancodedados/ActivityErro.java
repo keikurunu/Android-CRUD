@@ -5,11 +5,9 @@ import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivityOk extends AppCompatActivity {
+
+public class ActivityErro extends AppCompatActivity {
 
     Button btnVoltar;
 
@@ -17,9 +15,9 @@ public class MainActivityOk extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main_ok);
+        setContentView(R.layout.activity_erro);
 
-        btnVoltar = findViewById(R.id.btnFecharT2);
+        btnVoltar = findViewById(R.id.btnFecharT3);
 
         btnVoltar.setOnClickListener(v -> {
             finish();

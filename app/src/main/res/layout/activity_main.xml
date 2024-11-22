@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#85A1AA"
+    android:background="@color/material_dynamic_neutral50"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
-        android:text="GESTÃO USUARIO"
+        android:text="Login"
         android:textAlignment="center"
         android:textColor="#FDFFFF"
         android:textSize="32sp"
@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.15"
-        app:srcCompat="@drawable/figdados" />
+        app:srcCompat="@drawable/logo" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInLyUserT1"
@@ -92,7 +92,7 @@
         android:fontFamily="monospace"
         android:text="Gravar"
         android:textAlignment="center"
-        android:textColor="@color/teal_200"
+        android:textColor="@color/amber_600"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -112,7 +112,7 @@
         android:fontFamily="monospace"
         android:text="Consultar"
         android:textAlignment="center"
-        android:textColor="@color/teal_200"
+        android:textColor="@color/amber_600"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -132,7 +132,7 @@
         android:fontFamily="monospace"
         android:text="Atualizar"
         android:textAlignment="center"
-        android:textColor="@color/teal_200"
+        android:textColor="@color/amber_600"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -151,7 +151,7 @@
         android:backgroundTint="#2F4659"
         android:text="Deletar"
         android:textAlignment="center"
-        android:textColor="@color/teal_200"
+        android:textColor="@color/amber_600"
         android:textSize="20sp"
         android:textStyle="bold"
         android:fontFamily="monospace"
@@ -171,7 +171,7 @@
         android:fontFamily="monospace"
         android:text="Voltar"
         android:textAlignment="center"
-        android:textColor="@color/teal_200"
+        android:textColor="@color/amber_600"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textResultadoT1"
@@ -188,7 +188,7 @@
         android:fontFamily="monospace"
         android:text="Resultado"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/amber_600"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

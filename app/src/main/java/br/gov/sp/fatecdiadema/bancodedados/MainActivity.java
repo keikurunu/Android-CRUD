@@ -13,7 +13,7 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    DatabaseHelper dbHelper;
+    Database dbHelper;
     TextInputEditText textUsuario, textSenha;
     TextView textResultado;
     Button btnGravar, btnConsultar, btnAtualizar, btnDeletar, btnVoltar;
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        dbHelper = new DatabaseHelper(this);
+        dbHelper = new Database(this);
 
         textUsuario = findViewById(R.id.textInEdUserT1);
         textSenha = findViewById(R.id.textInEdSenhaT1);

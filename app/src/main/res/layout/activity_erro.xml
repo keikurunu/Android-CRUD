@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivityErro">
+    tools:context=".ActivityErro">
 
     <Button
         android:id="@+id/btnFecharT3"
@@ -38,6 +38,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.31"
-        app:srcCompat="@drawable/erro" />
+        app:srcCompat="@drawable/baseline_gpp_bad_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
